@@ -1,0 +1,581 @@
+\documentclass[10pt,fleqn]{scrreprt}
+
+\usepackage[top=2.5cm,bottom=2.5cm,left=1.5cm,right=1.5cm]{geometry}
+\usepackage{papi}
+
+\projectnumber{Projektnummer}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%noch%umsetzen%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+{\Huge Hier ist nun Platz für das Deckblatt\\ (Logo und Text)}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%noch%umsetzen%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{questionnaire}
+
+\interviewtime
+
+\separator
+
+\question{1.}{Beginnen wir mit einigen Fragen zu Familie und Partnerschaft\medskip
+
+Glauben Sie, dass man eine Familie braucht, um wirklich glücklich zu sein, oder glauben Sie, man kann alleine genauso glücklich leben?}
+
+   \answer{Braucht Familie}
+   \answer{Alleine genauso glücklich}
+   \answer{Alleine glücklicher}
+   \answer{Unentschieden}
+
+\separator
+
+\question{2.}{Meinen Sie, dass man heiraten sollte, wenn man mit einem Partner auf Dauer zusammenlebt?}
+
+   \answerwithfilter{Ja}{\bf 4}
+   \answerseparator
+   \answer{Nein}
+   \answerwithfilter{Unentschieden}{3}[0.2cm]
+   \answer{Weiß nicht}
+
+\separator
+
+\question{3.}{Und wie ist es, wenn ein Kind da ist? Meinen Sie, dass man dann heiraten sollte?}
+
+   \answer{Ja}
+   \answer{Nein}
+   \answer{Unentschieden}[0.2cm]
+   \answer{Weiß nicht}   
+
+\pageseparator
+
+\question{4.}{\instruction{Liste 4 vorlegen!}\medskip
+
+Über die Aufgaben der Frau in der Familie und bei der Kindererziehung gibt es verschiedene Meinungen. Bitte sagen Sie mir nun zu jeder Aussage auf dieser Liste, ob Sie ihr\medskip
+   
+   \begin{compactitem}
+   \item voll und ganz zustimmen,
+   \item eher zustimmen,
+   \item eher nicht zustimmen oder
+   \item überhaupt nicht zustimmen
+   \end{compactitem}
+}
+
+\blockBfour{Stimme voll und ganz zu}{Stimme eher zu}{Stimme eher nicht zu}{Stimme über\-haupt nicht zu}{
+	\textBfour{A}{Eine berufstätige Mutter kann ein genauso herzliches und vertrauensvolles Verhältnis zu ihren Kindern finden      wie eine Mutter, die nicht berufstätig ist.}   
+  \textBfour{B}{Für eine Frau ist es wichtiger, ihrem Mann bei seiner Karriere zu helfen, als selbst Karriere zu machen.} 
+	\textBfour{C}{Ein Kleinkind wird sicherlich darunter leiden, wenn seine Mutter berufstätig ist.}   
+	\textBfour{D}{Es ist für alle Beteiligten viel besser, wenn der Mann voll im Berufsleben steht und die Frau zu Hause bleibt 		und sich um den Haushalt und die Kinder kümmert.}
+	\textBfour{E}{Es ist für ein Kind sogar gut, wenn seine Mutter berufstätig ist und sich nicht nur auf der Haushalt 						 	konzentriert.}
+	\textBfour{F}{Eine verheiratete Frau sollte auf eine Berufstätigkeit verzichten, wenn es nur eine begrenzte Anzahl von 			 	  Arbeitsplätzen gibt, und wenn der Mann in der Lage ist, für den Unterhalt der Familie zu sorgen.}
+}
+
+\pageseparator
+
+\question{5A}{\instruction{Liste 5A vorlegen und bis Frage 5E liegenlassen!}\medskip
+
+Was von dieser Liste würden Sie für das {\bf Wichtigste} halten, das ein Kind lernen sollte, um sich auf das Leben vorzubereiten?\smallskip
+
+\instruction{Bitte in \underline{jede} Spalte \underline{ein} Kreuz!}}
+ 
+\question{5B}{Was wäre das {\bf Zweitwichtigste}?}
+
+\question{5C}{Was kommt an {\bf dritter} Stelle?}
+
+\question{5D}{Was kommt an {\bf vierter} Stelle?}
+
+\question{5E}{\instruction{Für offengebliebenes Ziel "`an fünfter Stelle"' ankreuzen!}}
+
+
+\blockCfive{\underline{\bf Fr. 5A}\smallskip 
+
+{\bf Am wichtigsten}}{\underline{\bf Fr. 5B}\smallskip
+
+{\bf Am zweitwichtigsten}}{\underline{\bf Fr. 5C}\smallskip
+
+{\bf An dritter Stelle}}{\underline{\bf Fr. 5D}\smallskip
+
+{\bf An vierter Stelle}}{\underline{\bf Fr. 5E}\smallskip
+
+{\bf An fünfter Stelle}}{
+	\textCfive{A}{Zu gehorchen}
+	\textCfive{B}{Beliebt zu sein}
+	\textCfive{C}{Selbstständig zu denken}
+	\textCfive{D}{Hart zu arbeiten}
+	\textCfive{E}{Anderen zu helfen, wenn sie Hilfe benö\-tigen}
+	\textCfive{}{Weiß nicht}
+}
+
+\pageseparator
+
+\question{6.}{\instruction{Orangen Kartensatz mischen und Kärtchen einzeln übergeben und einstufen lassen!}\medskip
+
+Auf diesen Kärtchen steht Verschiedenes über die berufliche Arbeit und den Beruf.
+
+Für wie wichtig halten Sie persönlich diese Merkmale für die berufliche Arbeit und den Beruf?
+
+Benutzen Sie bitte die Skala von 1 bis 7 für Ihre Antwort.}
+
+\blockAseven{\bf Un\-wich\-tig}{}{}{}{}{}{\bf Sehr wichtig}{
+	\numbersAseven
+	\textAseven{A}{Hohes Einkommen}
+ 	\textAseven{B}{Gute Aufstiegsmöglichkeiten}
+	\textAseven{C}{Interessante Tätigkeit}
+	\textAseven{D}{Eine Tätigkeit, bei der man selbstständig arbeiten kann} 
+	\textAseven{E}{Ein Beruf, bei dem man anderen helfen kann}
+	\textAseven{F}{Ein Beruf, der für die Gesellschaft nützlich ist}
+}
+    
+\separator
+
+\question{7.}{Ich werde Ihnen nun einige Aussagen vorlesen.
+
+Sagen Sie mir bitte zu jeder der einzelnen Aussagen, ob Sie persönlich derselben Meinung sind oder ob Sie anderer Meinung sind.\medskip
+
+\instruction{Vorgaben bitte vorlesen!}}
+
+\blockBtwo{\bf Bin derselben Meinung}{\bf Bin anderer Meinung}{
+	\textBtwo{\papibullet}{Egal, was manche Leute sagen:\smallskip
+	 
+	Die Situation der einfachen Leute wird nicht besser, sondern schlechter.}
+	\textBtwo{\papibullet}{So wie die Zukunft aussieht, kann man es kaum noch verantworten, Kinder auf die Welt zu bringen.}
+	\textBtwo{\papibullet}{Die meisten Politiker interessieren sich in Wirklichkeit gar nicht für die Probleme der einfachen Leute.}
+	\textBtwo{\papibullet}{Die meisten Leute kümmern sich in Wirklichkeit gar nicht darum, was mit ihren Mitmenschen geschieht.}
+}
+	    
+\pageseparator 
+
+\question{8.}{Manche Leute sagen, dass man den meisten Menschen trauen kann. Andere meinen, dass man nicht vorsichtig genug sein kann im Umgang mit anderen Menschen. Was ist Ihre Meinung dazu?}
+
+	\answer{Den meisten Menschen kann man trauen}
+	\answer{Man kann nicht vorsichtig genug sein}
+	\answer{Das kommt darauf an}[0.2cm]
+	\answeropentwo{Sonstiges, und zwar:}[0.2cm]
+	\answer{Weiß nicht}
+	
+\separator
+
+\question{9.}{Bitte sagen Sie mir, ob es {\bf Ihrer Meinung nach} einer Frau gesetzlich möglich sein sollte oder nicht, einen Schwangerschaftsabbruch vornehmen zu lassen - \medskip
+
+\instruction{Aussagen bitte vorlesen und Antworten ankreuzen!}}
+
+\blockBtwo{\bf Ja, sollte möglich sein}{\bf Nein, sollte nicht möglich sein}{
+	\textBtwo{\papibullet}{wenn das Baby mit hoher Wahrscheinlichkeit eine ernsthafte Schädigung haben wird?}
+	\textBtwo{\papibullet}{wenn die Frau verheiratet ist und keine Kinder mehr haben möchte?}	
+	\textBtwo{\papibullet}{wenn die Gesundheit der Frau durch die Schwangerschaft ernsthaft gefährdet ist?}
+	\textBtwo{\papibullet}{wenn die Familie nur über ein geringes Einkommen verfügt und sich keine Kinder mehr leisten kann?}
+	\textBtwo{\papibullet}{wenn die Schwangerschaft Folge einer Vergewaltigung ist?}
+	\textBtwo{\papibullet}{wenn die Frau unverheiratet ist und den Vater des Kindes nicht heiraten möchte?}
+	\textBtwo{\papibullet}{wenn die Frau es so will, unabhängig welchen Grund sie dafür hat?}
+}	
+
+\pageseparator
+
+\question{10.}{}
+
+\separator
+
+\question{11.}{Viele Leute in der Bundesrepublik neigen längere Zeit einer bestimmten politischen Partei zu, obwohl sie auch ab und zu mal eine andere Partei wählen.\smallskip
+
+Wie ist das bei Ihnen:\smallskip
+
+Neigen Sie - ganz allgemein gesprochen - einer bestimmten Partei zu?}
+
+	\answerwithfilter{Ja}{12}
+	\answerseparator
+	\answerwithfilter{Nein}{\bf 13}
+	\answer{Verweigert}
+	
+\separator
+
+\question{12.}{Sagen Sie mir bitte auch noch, welche Partei das ist?\smallskip
+
+\instruction{Falls "`andere Partei"', nachfragen: Welche?}}
+
+	\answer{CDU bzw. CSU}
+	\answer{SPD}
+	\answer{FDP}
+	\answer{Bündnis 90 / Die Grünen}
+	\answer{Die Republikaner}
+	\answer{PDS}
+	\answeropenone{Andere Partei, und zwar:}[0.2cm]
+	\answer{Verweigert}
+	
+\separator
+
+\question{13.}{}
+
+\separator
+
+\question{14.}{}
+
+\separator
+
+\framing{\bf\em WICHTIG! Blaues Blatt vor der Übergabe mit der Listen- und laufenden Nummer des Fragebogens versehen!\medskip
+
+Blaues Blatt und Umschlag überreichen!}
+
+\question{15.}{Würden Sie jetzt bitte dieses Blatt ausfüllen und es dann in den Umschlag stecken (und diesen verschließen). Vergessen Sie bitte nicht, {\bf auch} die Fragen auf der Rückseite zu beantworten!}
+
+\pageseparator
+
+\question{16.}{\instruction{Liste 16 vorlegen und bis Frage 19 liegenlassen!}\medskip
+
+Stellen Sie sich vor, Sie würden ein öffentliches Verkehrsmittel benutzen, ohne einen gültigen Fahrausweis zu besitzen.\smallskip
+
+Wie wahrscheinlich wäre es Ihrer Ansicht nach, dass ein Kontrolleur Sie dabei entdecken würde?\smallskip
+
+Benutzen Sie für Ihre Antwort bitte die Liste.}
+
+	\answer{Sehr unwahrscheinlich}
+	\answer{Eher unwahrscheinlich}
+	\answer{Ungefähr 50 zu 50}
+	\answer{Eher wahrscheinlich}
+	\answer{Sehr wahrscheinlich}[0.2cm]
+	\answer{Weiß nicht}
+	
+\separator
+
+\question{17.}{Stellen Sie sich vor, Sie würden mit mehr als 0,8 Promille Alkohol im Blut ein Kraftfahrzeug fahren:\smallskip
+
+Wie wahrscheinlich wäre es Ihrer Ansicht nach, dass die Polizei Sie dabei entdecken würde?}
+
+	\answer{Sehr unwahrscheinlich}
+	\answer{Eher unwahrscheinlich}
+	\answer{Ungefähr 50 zu 50}
+	\answer{Eher wahrscheinlich}
+	\answer{Sehr wahrscheinlich}[0.2cm]
+	\answer{Weiß nicht}
+	
+\separator
+
+\question{18.}{Und einmal angenommen, Sie würden in einem Kaufhaus oder Geschäft Waren mitnehmen, ohne zu bezahlen:\smallskip
+
+Wie wahrscheinlich wäre es Ihrer Ansicht nach, dass man Sie dabei entdecken würde?}
+
+	\answer{Sehr unwahrscheinlich}
+	\answer{Eher unwahrscheinlich}
+	\answer{Ungefähr 50 zu 50}
+	\answer{Eher wahrscheinlich}
+	\answer{Sehr wahrscheinlich}[0.2cm]
+	\answer{Weiß nicht}
+	
+\pageseparator
+
+\question{19.}{Und einmal angenommen, Sie würden bei der Einkommenssteuererklärung oder beim Lohnsteuerjahresausgleich falsche Angaben machen, um weniger Steuern zahlen zu müssen:\smallskip
+
+Wie wahrscheinlich wäre es Ihrer Ansicht nach, dass das Finanzamt dies entdecken würde?}
+
+	\answer{Sehr unwahrscheinlich}
+	\answer{Eher unwahrscheinlich}
+	\answer{Ungefähr 50 zu 50}
+	\answer{Eher wahrscheinlich}
+	\answer{Sehr wahrscheinlich}[0.2cm]
+	\answer{Weiß nicht}
+	
+\separator	
+
+\question{20.}{\instruction{Liste 20 vorlegen!}\medskip
+
+Nehmen wir an, Sie wurden das Opfer eines Diebstahls. Der Täter wird gefasst und ersetzt Ihnen den Schaden. Wie wichtig wäre es Ihnen, dass der Täter auch noch bestraft wird? Benutzen Sie für Ihre Antwort bitte die Liste.}
+
+	\answer{Sehr wichtig}
+	\answer{Ziemlich wichtig}
+	\answer{Weniger wichtig}
+	\answer{Überhaupt nicht wichtig}[0.2cm]
+	\answer{Weiß nicht}
+	
+\separator
+
+\question{21.}{Ist Ihnen in de letzten 3 Jahren etwas gestohlen worden, oder ist Ihnen das in den letzten 3 Jahren nicht passiert?}
+
+	\answer{Ja, etwas gestohlen worden}
+	\answer{Nein, nicht passiert}
+
+\separator
+
+\question{22.}{\instruction{Liste 22 vorlegen!}\medskip
+
+Wie ist Ihre Meinung zu der folgenden Aussage?\smallskip
+
+"`An die Gesetze muss man sich halten, egal ob man mit ihnen einverstanden ist oder nicht."'\smallskip
+
+Sagen Sie mir bitte mit Hilfe der Liste, inwieweit Sie der Aussage zustimmen oder nicht zustimmen.}
+
+	\answer{Stimme voll und ganz zu}
+	\answer{Stimme eher zu}
+	\answer{Stimme eher nicht zu}
+	\answer{Stimme überhaupt nicht zu}[0.2cm]
+	\answer{Weiß nicht}
+	
+\pageseparator
+
+\question{23.}{Glauben Sie, dass man durch harte Strafen die Kriminalität senken kann?}
+
+	\answer{Ja}
+	\answer{Nein}[0.2cm]
+	\answer{Weiß nicht}
+
+\separator
+
+\question{24.}{}
+
+\separator
+
+\question{25.}{Im Folgenden nenne ich Ihnen noch einige Einrichtungen der Europäischen Union.\smallskip
+
+Bitte sagen Sie mir wieder, wie groß das Vertrauen ist, das Sie den einzelnen Einrichtungen entgegenbringen.\medskip
+
+Wie ist das mit -\smallskip
+
+\instruction{Vorgaben bitte vorlesen! Bei jeder Vorgabe eine Antwort ankreuzen!}}
+
+\blockBseven{\bf Über\-haupt kein Vertrauen}{}{}{}{}{}{\bf Sehr großes Vertrauen}{
+	\numbersBseven
+	\textBseven{\papibullet}{der Europäischen Kommission}
+	\textBseven{\papibullet}{dem Europäischen Parlament}
+	\textBseven{\papibullet}{dem Europäischen Gerichtshof}
+}
+
+\separator
+
+\question{26.}{Finden Sie, dass die deutschen Gerichte mit den Angeklagten im allgemeinen zu hart oder zu milde umgehen?}
+
+	\answer{Zu hart}
+	\answer{Zu milde}
+	\answer{Gerade richtig}[0.2cm]
+	\answer{Weiß nicht}
+	
+\separator
+
+\question{27.}{Glauben Sie, dass vor Gericht der einfache Mann nicht so gut behandelt wird wie die "`besseren"' Leute?}
+
+	\answer{Ja, nicht so gut}
+	\answer{Nein, kein Unterschied}[0.2cm]
+	\answer{Weiß nicht}
+	
+\separator
+
+\question{28.}{}
+
+\separator
+
+\question{29.}{}
+
+\separator
+
+\question{30A}{}
+
+\separator
+
+\question{31.}{Welche Staatsbürgerschaft haben Sie?\smallskip
+
+Wenn Sie die Staatsbürgerschaft mehrerer Länder besitzen, nennen Sie mir bitte alle.\smallskip
+
+\instruction{Mehrfachnennungen möglich!\smallskip
+
+Mit der \underline{niedrigsten} zutreffenden Fragenummer weiterfragen!}}
+
+	&\hspace{7cm}{\bf Staatsbürgerschaft von:} & \\[0.2cm]
+	\answerwithfilter{Deutschland}{32}
+	\answerseparator
+	\answer{Griechenland}
+	\answer{Italien}[0.2cm]
+	\hybridanswer{Ehemaliges Jugoslawien}
+	\answer{Bosnien und Herzegowina}
+	\answer{Bundesrepublik Jugoslawien (Serbien und Montenegro)}
+	\answer{Kroatien}
+	\answer{Mazedonien}
+	\answerwithfilter{Slowenien}{\bf 36}[0.2cm]
+	\answer{Polen}
+	\answer{Türkei}[0.2cm]
+	\answeropentwo{Anderes Land, und zwar:}[0.2cm]
+	\answer{Keine, bin staatenlos}
+	
+\separator
+
+\question{32.}{}
+
+\pageseparator
+
+\question{33.}{Haben Sie persönlich Kontakte zu in Deutschland lebenden Ausländern, und zwar -\smallskip
+
+\instruction{Vorgaben bitte vorlesen!}}
+
+\blockAtwo{\bf Ja}{\bf Nein}{
+	\textAtwo{\papibullet}{In Ihrer eigenen Familie oder näheren Verwandschaft?}
+	\textAtwo{\papibullet}{An Ihrem Arbeitsplatz?}
+	\textAtwo{\papibullet}{In Ihrer Nachbarschaft?}
+	\textAtwo{\papibullet}{In Ihrem sonstigen Freundes- und Bekanntenkreis?}
+}
+
+\separator
+
+\question{34.}{}
+
+\separator
+
+\question{35.}{Würden Sie sagen, dass Sie -\smallskip
+
+\begin{compactitem}
+\item sehr stolz,
+\item ziemlich stolz,
+\item nicht sehr stolz oder
+\item überhaupt nicht stolz
+\end{compactitem}\smallskip
+
+darauf sind, ein(e) Deutsche(r) zu sein?}
+
+	\answer{Sehr stolz}
+	\answer{Ziemlich stolz}
+	\answer{Nicht sehr stolz}
+	\answer{Überhaupt nicht stolz}
+	
+\separator
+
+\question{36.}{}
+
+\separator
+
+\question{37.}{Denken Sie jetzt einmal an Ihre persönliche Situation:\smallskip
+
+Haben sich - einmal alles zusammengenommen - Ihre Vorstellungen über das, was Sie im Leben erreichen wollen, bisher - \smallskip
+
+\instruction{Vorgaben bitte vorlesen!}}
+
+	\bulletanswer{mehr als erfüllt}
+	\bulletanswer{erfüllt?}
+	\bulletanswer{nicht ganz erfüllt?}
+	\bulletanswer{oder überhaupt nicht erfüllt?}
+
+\pageseparator
+
+\question{38.}{Was meinen Sie. Hat bei uns heute jeder die Möglichkeit, sich ganz nach seiner Begabung und seinen Fähigkeiten auszubilden?}
+
+	\answer{Ja}
+	\answer{Nein}[0.2cm]
+	\answer{Weiß nicht}
+	
+\separator
+
+\question{39.}{Wenn Sie die Zeit heute mit der vor ein paar Jahren vergleichen:\smallskip
+
+Ist die wirtschaftliche Lage in Deutschland dann heute viel besser, etwas besser, gleichgeblieben, etwas schlechter oder viel schlechter als vor ein paar Jahren?\smallskip
+
+\instruction{Liste 39 vorlegen}}
+
+	\answer{Viel besser}
+	\answer{Etwas besser}
+	\answer{Gleichgeblieben}
+	\answer{Etwas schlechter}
+	\answer{Viel schlechter}[0.2cm]
+	\answer{Weiß nicht}
+	
+\separator
+
+\question{40.}{Können Sie mir ungefähr sagen, wie viele Arbeitslose es derzeit in Deutschland gibt?\smallskip
+
+\instruction{Angabe in Millionen und Hunderttausend eintragen, z.B. 1,2 Mio.!}}
+
+	\hybridanswer{Ja, etwa \bbox\bbox, \bbox {\bf Millionen}}
+	\answer{Nein, kann ich nicht sagen}
+
+\separator
+
+\question{41.}{Was meinen Sie, wie wird sich die Zahl der Arbeitslosen in Deutschland in den nächsten Jahren entwickeln? Bitte sehen Sie sich diese Liste an und sagen Sie mir, was Ihre persönliche Erwartung für die nächsten Jahre am besten beschreibt.\smallskip
+
+\instruction{Liste 41 vorlegen!}}
+
+	\answer{Viel mehr Arbeitslose}
+	\answer{Etwas mehr Arbeitslose}
+	\answer{Gleich viele Arbeitslose}
+	\answer{Etwas weniger Arbeitslose}
+	\answer{Viel weniger Arbeitslose}[0.2cm]
+	\answer{Weiß nicht}
+	
+\pageseparator
+
+\question{42.}{Und wenn Sie Ihre eigene wirtschaftliche Lage heute mit der vor ein paar Jahren vergleichen:\smallskip
+
+Ist Ihre eigene wirtschaftliche Lage heute viel besser, etwas besser, gleichgeblieben, etwas schlechter oder viel schlechter als vor ein paar Jahren?\smallskip
+
+\instruction{Liste 42 vorlegen}}
+
+	\answer{Viel besser}
+	\answer{Etwas besser}
+	\answer{Gleichgeblieben}
+	\answer{Etwas schlechter}
+	\answer{Viel schlechter}[0.2cm]
+	\answer{Weiß nicht}
+	
+\separator
+
+\question{43.}{Es wird heute viel über die verschiedenen Bevölkerungsschichten gesprochen.\smallskip
+
+Welcher Schicht rechnen Sie sich selber zu?\smallskip
+
+\instruction{Vorgaben bitte vorlesen!}}
+
+	\bulletanswer{Der Unterschicht?}
+	\bulletanswer{Der Arbeiterschicht?}
+	\bulletanswer{Der Mittelschicht?}
+	\bulletanswer{Der oberen Mittelschicht?}
+	\bulletanswer{Oder der Oberschicht?}[0.2cm]
+	\answer{Keiner dieser Schichten}
+	\answer{Einstufung abgelehnt}
+	\answer{Weiß nicht}
+
+\separator
+
+\question{44.}{Im Vergleich dazu, wie andere hier in Deutschland leben:\smallskip
+
+Glauben Sie, dass Sie Ihren gerechten Anteil erhalten, mehr als den gerechten Anteil, etwas weniger oder sehr viel weniger?}
+
+	\answer{Gerechten Anteil}
+	\answer{Mehr als gerechten Anteil}
+	\answer{Etwas weniger}
+	\answer{Sehr viel weniger}[0.2cm]
+	\answer{Weiß nicht}
+	
+\separator
+
+\question{45.}{}
+
+\pageseparator
+
+\question{46.}{Wie ist es mit Ihrer persönlichen Alterssicherung oder Sicherung vor Invalidität und im Krankheitsfall?\smallskip
+
+Fühlen Sie sich -\smallskip
+
+\instruction{Vorgaben bitte vorlesen!}}
+
+	\bulletanswer{ausreichend gesichert?}
+	\bulletanswer{oder nicht ausreichend gesichert?}
+	\bulletanswer{oder haben Sie sich darüber noch keine Gedanken gemacht?}
+
+\separator
+
+\question{47.}{Manche Leute sagen, dass es bei uns heute schon mehr als genug Sozialleistungen gibt und dass man sie in Zukunft einschränken sollte.\smallskip
+
+Andere Leute meinen, dass wir das gegenwärtige System der sozialen Sicherung beibehalten und wenn nötig erweitern sollten. Haben Sie sich zu diesem Problem eine Meinung gebildet?}
+
+	\answerwithfilter{Ja}{48}
+	\answerseparator
+	\answerwithfilter{Nein}{\bf 49}
+
+\separator
+
+\question{48.}{Wie ist Ihre Meinung:\smallskip
+
+Sollten die Sozialleistungen in Zukunft gekürzt werden oder sollte es so bleiben, wie es ist, oder sollte man die Sozialleistungen ausweiten?}
+
+	\answer{Sollten gekürzt werden}
+	\answer{Sollten so bleiben wie bisher}
+	\answer{Sollten ausgeweitet werden}
+
+
+\end{questionnaire}
+
+\lastpage
+
+\end{document}

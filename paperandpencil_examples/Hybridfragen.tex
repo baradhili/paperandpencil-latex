@@ -1,0 +1,58 @@
+\documentclass[12pt,fleqn]{scrreprt}
+
+\usepackage[ngerman]{babel}
+\usepackage[top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm]{geometry}
+\usepackage[latin1]{inputenc}
+\usepackage{paperandpencil}
+
+\begin{document}
+
+\question{{\bf In welchem Bereich lag bei diesem ersten Arbeitsplatz der Schwerpunkt Ihrer eigenen Tätigkeit?} {\em (Mehrfachantworten möglich)}}
+
+\begin{answersA}
+\item \ebox{Personalwesen}
+\item \ebox{Finanzplanung}
+\item \ebox{Management}
+\item \ebox{Forschung und Entwicklung}
+\item \ebox{Lehre}
+\item \ebox{Verwaltungstätigkeit}
+\item \ebox{sonstige Tätigkeiten}
+\item Welche?\linetext{}
+\item \longline
+\end{answersA}
+
+\line
+
+\question{\bf Fühlen Sie sich nachts an einem der unten aufgeführten Orte besonders bedroht?}
+
+\hybridbracket{\underline{Ja}, und zwar...\\
+\pbox{\quad in einer Unterführung}\\
+\pbox{\quad im Bus}\\
+\pbox{\quad in einer Tiefgarage}\\
+\pbox{\quad am Bahnhof}\\
+\pbox{\quad im Industriegebiet}\\
+\pbox{\quad im Wald}\\
+\pbox{\quad im Park}\\
+\pbox{\quad am See}}
+{\em Sie können mehrere Kästchen ankreuzen}
+\hybridline{\underline{Ja}, an einem anderen Ort:}{Ort bitte eintragen}
+\hybridclear{\pbox{\underline{Nein}, an keinem der oben\\ angeführten Orte}}
+\hybridclear{\pbox{\underline{Nein}, weil ich nachts an den oben\\ angeführten Orten nie bin}}
+\hybridclear{\pbox{\underline{Weiß nicht}}}
+
+\line
+
+\question{\bf Welchen höchsten allgemeinbildenden Schulabschluss haben Sie?}
+
+\begin{longanswersA}
+\item \pbox{Hauptschulabschluss (bzw. Volksschulabschluss)}
+\item \pbox{Realschulabschluss (Mittlere Reife)}
+\item \pbox{Polytechnische Oberschule 10. Klasse}
+\item \pbox{Fachhochschulreife}
+\item \pbox{Allgemeine oder fachgebundene Hoschulreife/Abitur}
+\item \pbox{Anderer Abschluss und zwar \linetext{Bitte tragen Sie hier den Abschluss ein}}
+\item \pbox{Noch Schüler}
+\item \pbox{Keinen Schulabschluss}
+\end{longanswersA}
+
+\end{document}

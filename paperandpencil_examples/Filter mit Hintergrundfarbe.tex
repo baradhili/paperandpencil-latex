@@ -1,0 +1,36 @@
+\documentclass[12pt,fleqn]{scrreprt}
+
+\usepackage[ngerman]{babel}
+\usepackage[top=2.5cm,bottom=2.5cm,left=2cm,right=2cm]{geometry}
+\usepackage[latin1]{inputenc}
+\usepackage{paperandpencil}
+  
+\begin{document}
+
+\question{\bf Ist das Studienfach, das Sie jetzt studieren, das Studienfach, mit dem Sie ursprünglich Ihr Studium begonnen haben?}
+\begin{linkanswers}
+\framedlink{Ja}{Weiter mit Frage 5}[0.2cm]
+\framedlink{Nein}{Weiter mit Frage 2}
+\end{linkanswers}
+
+\begin{coloredfilter}
+\question{\bf Welches Studium haben Sie ursprünglich begonnen?}
+\hfill Erststudium war:\hspace{-5cm} \year
+\question{\bf Wie lange haben Sie dieses Fach studiert?}
+\hfill Semester \xxbox\hspace{4cm}
+\question{\bf Wie zutreffend sind für Sie die folgenden Gründe für einen Studienwechsel gewesen?}
+\vertikalblockfive{trifft stark zu}{trifft zu}{halb und halb}{trifft nicht zu}{trifft überhaupt nicht zu}{
+\blocktextfive{Ich konnte meine Vorstellungen nicht verwirklichen}
+\blocktextfive{Ich sah nur schlechte Zukunftsaussichten}
+\blocktextfive{Meine Interessen haben sich verlagert}
+\blocktextfive{Es hat einfach nicht gut geklappt}
+\blocktextfive{Die Zusammenarbeit mit den Dozent/inn/en war schlecht}
+\blocktextfive{Die Zusammenarbeit mit den Kommiliton/inn/en war schlecht}
+\blocktextfive{Ich hatte familiäre Gründe}}\end{coloredfilter}
+\question{\bf Ist das Studium, das Sie begonnen haben, Ihr \lq{}Wunschstudium\rq{} gewesen?}
+\begin{answersA}
+\item \pbox{Ja}
+\item \pbox{Nein}
+\end{answersA}
+
+\end{document}

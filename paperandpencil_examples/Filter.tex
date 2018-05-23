@@ -1,0 +1,38 @@
+\documentclass[12pt,fleqn]{scrreprt}
+
+\usepackage[ngerman]{babel}
+\usepackage[top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm]{geometry}
+\usepackage[latin1]{inputenc}
+\usepackage{paperandpencil}
+
+\begin{document}
+
+\question{\bf Würden Sie die Personen bzw. Personengruppe, die zurzeit in Ihrem Haushalt wohnt, als studentische Wohngemeinschaft bezeichnen?}
+
+\begin{linkanswers}
+\framedlink{Ja}{{\em Bitte weiter mit} {\bf\em Frage $32$}}
+\nolink{\pbox{Nein}}[0.25cm]
+\nolink{\pbox{Wei\ss{} nicht}}
+\end{linkanswers}
+
+\line
+
+\question{\bf Ist Ihr Haushalt mit den folgenden Dingen ausgestattet?}
+
+\begin{compactitem}[-]
+\item Farbfernsehgerät
+
+\begin{linkanswers}
+\linkwithquestion{\df{Ja}}{Haben Sie das derzeit benutzte Gerät in den letzten 12 Monaten gekauft?}{\pbox{Ja}\quad\pbox{Nein}}
+\nolink{\pbox{Nein}}
+\end{linkanswers}
+
+\item Videorecorder
+\begin{linkanswers}
+\linkwithquestion{\df{Ja}}{Haben Sie das derzeit benutzte Gerät in den letzten 12 Monaten gekauft?}{\pbox{Ja}\quad\pbox{Nein}}
+\nolink{\pbox{Nein}}
+\end{linkanswers}
+
+\end{compactitem}
+
+\end{document}
