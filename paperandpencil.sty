@@ -1,7 +1,7 @@
 \NeedsTeXFormat{LaTeX2e}
 
-%WICHTIG: PAPERANDPECIL.STY funktioniert nur mit der Dokumentklasse SCRREPRT!!!
-%Als Randeinstellung bitte \usepackage[top=...cm,bottom=...cm,left=2.5cm,right=2.5cm]{geometry} wählen
+% IMPORTANT: PAPERANDPECIL.STY only works with the document class SCRREPRT !!!
+% As margin setting please choose \ usepackage [top = ... cm, bottom = ... cm, left = 2.5cm, right = 2.5cm] {geometry}
 
 \ProvidesPackage{paperandpencil}[2009/08/11 v1.0]
 
@@ -30,74 +30,74 @@
 
 %%%%%%%%%%ANSWERSA%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newenvironment{answersA}{\vspace{0.25cm}\begin{addmargin}[2cm]{6cm}\begin{compactitem}[]}{\end{compactitem}\end{addmargin}}
-%Antwortumgebung für kürzere Antworten mit Kästchen rechts
+% Answer environment for shorter answers with box on the right
 
 \newcommand{\pbox}[1]{#1\dotfill$\Box$}
-%Befehl füllt Zeile mit Punkten auf und fügt am Ende eine kleine Ankreuzbox ein.
+% Command fills in rows with dots and adds a small checkbox at the end.
 \newcommand{\pbigbox}[1]{#1\dotfill$\square$}
-%Befehl füllt Zeile mit Punkten auf und fügt am Ende eine große Ankreuzbox ein.
+% Command fills in rows with dots and adds a large checkbox at the end.
 \newcommand{\ebox}[1]{#1\hfill$\Box$}
-%Befehl füllt Zeile mit Leerraum auf und fügt am Ende eine kleine Ankreuzbox ein.
+% Command fills in a row with white space and inserts a small checkbox at the end.
 \newcommand{\ebigbox}[1]{#1\hfill$\square$}
-%Befehl füllt Zeile mit Leerraum auf und fügt am Ende eine große Ankreuzbox ein.
+% Command fills in a row with white space and inserts a large checkbox at the end.
 %%%%%%%%%%ANSWERSA%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%ANSWERSB%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newenvironment{answersB}{\vspace{0.25cm}\begin{addmargin}[2cm]{6cm}\begin{compactitem}[$\Box$\quad]}{\end{compactitem}\end{addmargin}}
-%Antwortumgebung für kürzere Antworten mit kleinem Kästchen links
+% Answer environment for shorter answers with a small box on the left
 %%%%%%%%%%ANSWERSB%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%ANSWERSC%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newenvironment{answersC}{\vspace{0.25cm}\begin{addmargin}[2cm]{6cm}\begin{compactitem}[$\square$\quad]}{\end{compactitem}\end{addmargin}}
-%Antwortumgebung für kürzere Antworten mit großem Kästchen links
+% Answer environment for shorter answers with large box on the left
 %%%%%%%%%%ANSWERSC%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%LONGANSWERS%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newenvironment{longanswersA}{\vspace{0.25cm}\begin{addmargin}[0.5cm]{0cm}\begin{compactitem}[]}{\end{compactitem}\end{addmargin}} 
-%Antwortumgebung für lange Antworten. Erstreckt sich über gesamte Seitenbreite.
+% Answer environment for long answers. Extends over entire page width.
 %%%%%%%%%%LONGANSWERS%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%LONGANSWERSB%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newenvironment{longanswersB}{\vspace{0.25cm}\begin{addmargin}[0.5cm]{0cm}\begin{compactitem}[$\Box$\quad]}{\end{compactitem}\end{addmargin}} 
-%Antwortumgebung für lange Antworten. Kleine Kästchen links.
+% Answer environment for long answers. Small boxes on the left.
 %%%%%%%%%%LONGANSWERSB%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%LONGANSWERSC%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newenvironment{longanswersC}{\vspace{0.25cm}\begin{addmargin}[0.5cm]{0cm}\begin{compactitem}[$\square$\quad]}{\end{compactitem}\end{addmargin}} 
-%Antwortumgebung für lange Antworten. Kleine Kästchen links.
+% Answer environment for long answers. Small boxes on the left.
 %%%%%%%%%%LONGANSWERSC%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\df}[1]{#1\dotfill}
-%Befehl füllt Zeile mit Punkten auf.
+% Command fills in rows with dots.
 
 \def\line{~\hrulefill~}
-%Trennlinie zwischen einzelnen Fragen
+% Dividing line between individual questions
 
 %%%%%%%%%%SONDERKATEGORIEN%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\bbox}{\framebox[0.6cm]{\rule{0cm}{0.6cm}}}
-%Größere Box, um dort Zahlen einfügen zu können.
+% Larger box to add numbers.
 \newcommand{\rbox}{\framebox[0.5cm]{\rule{0cm}{0.3cm}}}
 \def\year{$\hfill \bbox\ \bbox\ \bbox\ \bbox\hspace{4cm}$}
 \def\yearxxA{$\hfill 19\ \bbox\ \bbox\hspace{4cm}$}
 \def\yearxxB{$\hfill 20\ \bbox\ \bbox\hspace{4cm}$}
 \def\yearlineA{\hspace{0.5cm}19\raisebox{-4.5mm}{\parbox{1.5cm}{\hrule\strut}}}
 \def\yearlineB{\hspace{0.5cm}20\raisebox{-4.5mm}{\parbox{1.5cm}{\hrule\strut}}}
-%Geburtsjahr
+%Year
 \def\monthandyearA{$\hfill\mbox{Monat}\ \bbox\ \bbox\quad\mbox{ Jahr } \bbox\ \bbox\ \bbox\ \bbox\hspace{4cm}$}
 \def\monthandyearB{$\hfill\stackrel{\bbox\ \bbox}{\mbox{\footnotesize Monat}}\qquad \stackrel{\bbox\ \bbox\ \bbox\ \bbox}{\mbox{ \footnotesize Jahr }}\hspace{4cm}$}
-%Monat und Jahr
+%Month and Year
 \def\km{$\hfill \bbox\ \bbox\ \bbox\ \bbox\ ,\ \bbox\mbox{ km}\hspace{6cm}$}
-%Kilometerangabe in xx,x km
+%Kilometer in xx,x km
 \def\xxbox{$\bbox\ \bbox\ $}
-%zwei leere Kästchen nebeneinander
+% two empty boxes next to each other
 \def\xxxbox{$\bbox\ \bbox\ \bbox\ $}
-%drei leere Kästchen nebeneinander
+% three empty boxes next to each other
 \def\percent{\raisebox{-4.5mm}{$\bbox\ \bbox\ \bbox\ \%$}}
-%Prozentangaben
+%Percent
 \newcommand{\linetext}[1]{\raisebox{-4.5mm}{\parbox{6.5cm}{\hrule\strut \centering\footnotesize {\em #1}}}}
-%Linie mit kursivem Text darunter
+% Line with italic text underneath - TODO change length to allow variable or to end of line
 %%%%%%%%%%SONDERKATEGORIEN%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%FILTER%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \def\goto{$\Box$\raisebox{0.45mm}{$\!\rightarrow$}}
-%Filterpfeil
+%Filter arrow
 \newenvironment{linkanswers}{\begin{addmargin}{2cm}\begin{longtable}{p{6cm}p{7cm}}}{\end{longtable}\end{addmargin}\vspace{-0.5cm}}
 \newcommand{\framedlink}[2]{\df{#1}\goto&\fbox{#2}\\}
 \newcommand{\link}[2]{\df{#1}\goto&#2\\}
@@ -110,7 +110,8 @@
 \newenvironment{fshaded}{%
 \def\FrameCommand{\fcolorbox{framecolor}{shadecolor}}%
 \MakeFramed {\FrameRestore}}%
-{\endMakeFramed} %Sorgt für umrahmte Boxen in der vorher festegelgten Farbe 'shadecolor' und der Umrandung 'framecolor'.
+{\endMakeFramed} 
+% Provides framed boxes in the specified color 'shadecolor' and the frame 'framecolor'.
 
 %%%%%%%%%%%%%%%%%%%%UPA%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\hupAeleven}[2]{\begin{center}
